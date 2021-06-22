@@ -1,0 +1,67 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "server",
+            "type": "shell",
+            "command": "rails s",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+                // "group": "develop"
+            },
+            "runOptions": { "runOn": "folderOpen" }
+        },
+        {
+            "label": "console",
+            "type": "shell",
+            "command": "rails c",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+                // "group": "develop"
+            },
+            "runOptions": { "runOn": "folderOpen" }
+        },
+        {
+            "label": "pgcli",
+            "type": "shell",
+            "command": "pgcli todos_development",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+                // "group": "develop"
+            },
+            "runOptions": { "runOn": "folderOpen" }
+        }
+        /* {
+            "label": "Run backend gulp startup",
+            "type": "shell",
+            "command": "cd backend && gulp",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "group": "develop"
+            },
+            "runOptions": { "runOn": "folderOpen" }
+        }, */
+        /* {
+            "type": "process",
+            "label": "terminal",
+            "command": "/bin/bash", // <-- your shell here
+            "args": [
+                "-l" // login shell for bash
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": false, // silence "Executing task ..."
+                "focus": true,
+                // "group": "develop", // some arbitrary name for the group
+                "panel": "dedicated"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        } */
+    ]
+}
